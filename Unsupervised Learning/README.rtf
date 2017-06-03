@@ -1,0 +1,84 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;\csgray\c100000;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf0 Name: Anmol Chhabria\
+GTID: 902931430\
+\
+Running Algorithms\
+_________________\
+For PCA, ICA, and Random Projection, I used Weka. \
+For clustering (EM and k-means) I used Weka to generate the SSE and respective outputs.\
+For Neural Networks, I used Weka to generate the accuracy and times.\
+__________________\
+\
+Files\
+__________________\
+Achhabria7-analysis.pdf : Analysis for assignment\
+EEG_Data.csv: EEG Data\
+Movie_metadata_numeric.csv: Movie data used \
+Movie_metadata.csv: Movie data\
+Analysis_Clustering: Excel with data for all Dimension Reduction and Clustering outputs\
+Analysis_Variances: Excel with data for all Variances of Clustering outputs\
+ICA_EEG_Data.csv:EEG data after ICA\
+ICA_Movie_Data.csv: Movie data after ICA\
+ICA_EEG_1E-8_KurtosisAnalysis: ICA EEG Kurtosis\
+ICA_Movie_1e-8_KurtosisAnalysis: ICA Movie Kurtosis\
+IG_Movie_Data.csv: Movie data after IG\
+IG_EEG_Data.csv: EEG data after IG\
+PCA_EEG_0,9_15%Threshold.csv: EEG data after PCA\
+PCA_Movie_0.9_10%Threshold.csv: Movie data after PCA\
+RP_Movie_Data_8.csv: Movie data after RP ~PCA\
+RP_Movie_Data_70.csv: Movie data after RP ~PCA\
+RP_EEG_Data_6.csv: EEG data after RP ~PCA\
+RP_EEG_Data_12.csv: EEG data after RP~ICA\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \expnd0\expndtw0\kerning0
+__________________\
+\
+Movies Data Description\
+____________________\
+\
+Website: https://www.kaggle.com/deepmatrix/imdb-5000-movie-dataset\
+Attributes: There are 2399 unique director names, and thousands of actors/actresses. Below are the 28 variables: "movie_title" "color" "num_critic_for_reviews" "movie_facebook_likes" "duration" "director_name" "director_facebook_likes" "actor_3_name" "actor_3_facebook_likes" "actor_2_name" "actor_2_facebook_likes" "actor_1_name" "actor_1_facebook_likes" "gross" "genres" "num_voted_users" "cast_total_facebook_likes" "facenumber_in_poster" "plot_keywords" "movie_imdb_link" "num_user_for_reviews" "language" "country" "content_rating" "budget" "title_year" "imdb_score" "aspect_ratio"\
+\
+Note: This was reduced to 14 variables including 2 nominal variables, and the dataset was converted to binary results for the nominal variables resulting 75 variables.\
+______________________\
+\
+EEG Data Description\
+______________________\
+\
+References:\
+\
+Wang, H., Li, Y., Hu, X., Yang, Y., Meng, Z., & Chang, K. M. (2013, June). Using EEG to Improve Massive Open Online Courses Feedback Interaction. In AIED Workshops.\
+Wang, H., & Yang, J. (2016). Multiple Confounders Correction with Regularized Linear Mixed Effect Models, with Application in Biological Processes. Bioinformatics and Biomedicine (BIBM)\
+Yang, J., Wang, H., Zhu, J., & Xing, E. P. (2016). SeDMiD for Confusion Detection: Uncovering Mind State from Time Series Brain Wave Data. NIPS 2016 Timg Series Workshop\
+\
+Website: https://www.kaggle.com/wanghaohan/eeg-brain-wave-for-confusion\
+\
+Description: We collected EEG signal data from 10 college students while they watched MOOC video clips. We extracted online education videos that are assumed not to be confusing for college students, such as videos of the introduction of basic algebra or geometry. We also prepare videos that are expected to confuse a typical college student if a student is not familiar with the video topics like Quantum Mechanics, and Stem Cell Research. \
+\
+Attributes\
+	1	Column 1: Subject ID\
+	2	Column 2: Video ID\
+	3	Column 3: Attention (Proprietary measure of mental focus)\
+	4	Column 4: Mediation (Proprietary measure of calmness)\
+	5	Column 5: Raw (Raw EEG signal)\
+	6	Column 6: Delta (1-3 Hz of power spectrum)\
+	7	Column 7: Theta (4-7 Hz of power spectrum)\
+	8	Column 8: Alpha 1 (Lower 8-11 Hz of power spectrum)\
+	9	Column 9: Alpha 2 (Higher 8-11 Hz of power spectrum)\
+	10	Column 10: Beta 1 (Lower 12-29 Hz of power spectrum)\
+	11	Column 11: Beta 2 (Higher 12-29 Hz of power spectrum)\
+	12	Column 12: Gamma 1 (Lower 30-100 Hz of power spectrum)\
+	13	Column 13: Gamma 2 (Higher 30-100 Hz of power spectrum)\
+	14	Column 14: predefined label (whether the subject is expected to be confused)\
+	15	Column 15: user-defined label (whether the subject is actually confused)\kerning1\expnd0\expndtw0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+}
